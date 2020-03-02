@@ -1,15 +1,15 @@
+#Author: Itay hacohen
+
 from collections import Counter, OrderedDict, defaultdict
 from functools import partial
 ENCRYPTED_FILE = 'encrypted.exe'
 DECRYPTED_FILE = 'decrypred.exe'
-KEY_SIZE = 17
 FILE_SHOW_SIZE = 150
-KEY_MAX_SIZE = 30
+KEY_MAX_SIZE = 35
 CHUNCK_SIZE = 1024
 FIRST_2_BYTES_PE_HEADER = b'MZ'
 counter = Counter()
 suggested_keys = []
-
 
 def get_repeated_bytes(bytes):
     string = bytes.decode()
