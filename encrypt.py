@@ -1,3 +1,7 @@
+'''
+Author: Itay hacohen
+'''
+
 import binascii
 import random
 import string
